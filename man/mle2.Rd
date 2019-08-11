@@ -7,21 +7,14 @@
   Estimate parameters by the method of maximum likelihood.
 }
 \usage{
-mle2(minuslogl, start, method, optimizer,
-    fixed = NULL, data=NULL,
-    subset=NULL,
-default.start=TRUE, eval.only = FALSE, vecpar=FALSE,
-parameters=NULL,
-parnames=NULL,
-skip.hessian=FALSE,
-hessian.opts=NULL,
-use.ginv=TRUE,
-trace=FALSE,
-browse_obj=FALSE,
-gr=NULL,
-optimfun,\dots)
-calc_mle2_function(formula,parameters, links, start,
-   parnames, use.deriv=FALSE, data=NULL,trace=FALSE)
+mle2(minuslogl, start, method, optimizer, fixed = NULL, data = NULL,
+     subset=NULL, default.start = TRUE, eval.only = FALSE, vecpar = FALSE,
+     parameters = NULL, parnames = NULL,
+     skip.hessian = FALSE, hessian.opts = NULL, use.ginv = TRUE,
+     trace = FALSE, browse_obj = FALSE, gr = NULL, optimfun, \dots)
+
+calc_mle2_function(formula, parameters, links, start, parnames,
+                   use.deriv = FALSE, data = NULL, trace = FALSE)
 }
 \arguments{
   \item{minuslogl}{Function to calculate negative log-likelihood,
